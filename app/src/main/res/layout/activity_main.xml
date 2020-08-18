@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="11"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/iv_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/button_start" />
+
+        <ImageView
+            android:id="@+id/iv_how_to"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/button_howto"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="6"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/a_monkey"
+                android:adjustViewBounds="true"
+                android:onClick="clickFind"
+                android:visibility="invisible"
+                />
+
+            <ImageView
+                android:id="@+id/iv02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/a_pig"
+                android:adjustViewBounds="true"
+                android:layout_alignParentRight="true"
+                android:onClick="clickFind"
+                android:visibility="invisible"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/a_lion"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:onClick="clickFind"
+                android:visibility="invisible"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/a_frog"
+                android:adjustViewBounds="true"
+                android:onClick="clickFind"
+                android:visibility="invisible"
+                />
+
+            <ImageView
+                android:id="@+id/iv05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/a_ele"
+                android:adjustViewBounds="true"
+                android:layout_alignParentRight="true"
+                android:onClick="clickFind"
+                android:visibility="invisible"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/iv06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/q_board"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:visibility="invisible"
+            />
+
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adv"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_app_id"/>
+
+
+
+</LinearLayout>

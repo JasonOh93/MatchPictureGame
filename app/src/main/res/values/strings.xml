@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MatchPictureEX</string>
+
+    <string name="alert_title">게임 설명</string>
+    <string name="alert_message">matchPic이란 게임은 동물에서 나올거야. \n하단에 있는 단어와 터치한 동물이 일치하면 이기는거지!!</string>
+
+    <string name="alert_ok">확인</string>
+    <string name="alert_cancel">취소</string>
+
+    <string name="clickFind">다시 확인 해봐@@</string>
+
+    <string name="contact_title">정답입니다!</string>
+    <string name="contact_message">축하합니다@@ \n확인을 누르시면 다음으로 넘어가고 \n취소를 누르시면 게임이 종료 됩니다.</string>
+
+
+    <string name="admob_app_id">ca-app-pub-5658669187964816~5284086547</string>
+    <string name="banner_app_id">ca-app-pub-5658669187964816/9124093357</string>
+
+</resources>
