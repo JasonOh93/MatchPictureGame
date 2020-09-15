@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     int count_random = 0;
 
-    AdView adView;
+//    AdView adView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,10 +38,10 @@ public class MainActivity extends AppCompatActivity {
             iv_animals[i] = findViewById( R.id.iv01 + i );
         }
 
-        adView = findViewById(R.id.adv);
+//        adView = findViewById(R.id.adv);
 
         //광고 요청 객체 생성
-        adView.loadAd( new AdRequest.Builder().build() );
+//        adView.loadAd( new AdRequest.Builder().build() );
 
         //start 눌렀을 때 반응
         iv_start.setOnClickListener(new View.OnClickListener() {
